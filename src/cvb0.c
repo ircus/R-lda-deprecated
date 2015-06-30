@@ -85,7 +85,7 @@ SEXP cvb0(
       if (count < 0) {
         error("Count must be positive.");
       }
-      if (word >= V || word < 0) {
+      if (word > V || word < 0) {
         error("Word (%d) must be positive and less than or "
             "equal to the number of words (%d).", word, V);
       }
